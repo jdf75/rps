@@ -1,8 +1,18 @@
 // rock, paper, scissors! //
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+let playerSelection;
+let computerSelection;
+
+const maxRound = 5;
+let round = 1;
+
+while (round <= maxRound) {
+    computerSelection = getComputerChoice();
+    playerSelection = prompt();
+    console.log(playRound(playerSelection, computerSelection));
+    round++;
+}
+
 
 
 
