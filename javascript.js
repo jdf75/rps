@@ -8,7 +8,7 @@ let round = 1;
 
 while (round <= maxRound) {
     computerSelection = getComputerChoice();
-    playerSelection = prompt();
+    playerSelection = prompt(`Enter your choice (Rock, Paper or Scissors)`);
     console.log(playRound(playerSelection, computerSelection));
     round++;
 }
